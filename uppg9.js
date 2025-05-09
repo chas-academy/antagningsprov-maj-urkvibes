@@ -8,7 +8,20 @@ function uppg9 (){
 
     // anropa funktionen och skicka med en array som argument
 
+function sort(array){
+    array.forEach(number => {
+        if (number % 2 === 0) {
+            console.log(`${number} är jämnt`);
+         }   
+        else { console.log(`${number} är udda`);
+        }
+    });
   
+}
+const nummer = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+sort(nummer);
+
 }
 
 module.exports = { uppg9 };
+uppg9();
